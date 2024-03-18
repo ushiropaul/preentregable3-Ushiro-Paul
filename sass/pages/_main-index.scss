@@ -1,0 +1,36 @@
+/* estilos de main */
+
+.main-index {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-image: url(./../img/img-index/fondo.main.bmp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 0 7px #8d8d8d;
+    .presentacion-general-index{
+        @extend .centrar-algo;
+        margin-bottom: 2rem;
+        .titulo-index {
+            display: flex;
+            justify-content: center;  
+            }
+            .descripcion-index{
+                background-color: rgba(255, 255, 255, 0.342); /* Color blanco con 70% de opacidad */
+                backdrop-filter: blur(6px);
+                padding: 1rem;
+                border-radius: 1rem;
+            }
+    }
+    .epocas-index {
+        @include flex-container(row, center, center, wrap);
+        // display: flex;
+        // justify-content: center;
+        gap: 1.5rem;
+        // align-items: center;
+        margin-bottom: 2rem;
+        // flex-wrap: wrap;
+    }
+    
+}
+

@@ -1,0 +1,38 @@
+@use './../utilities/variables';
+/* estilos de header */
+.background-header {
+    background-color: variables.$color-verde-components;
+        .contenedor-de-los-items-del-nav{
+            padding: 0;
+            .logo-header {
+                display: flex;
+                align-items: center;
+                h2{
+                    align-items: center;
+                text-align: center;
+                }
+                img {
+                    width: 80px;
+                    height: 70px;
+                }
+                .titulo-header{
+                    color: rgb(199, 191, 29);
+                    font-weight: 700;
+                }
+            }
+            .menu-button{
+                border: none;
+                &:focus {
+                    box-shadow: none;
+                }
+                .menu-icon {
+                    background-image: url(./../img/img-index/hamburger-menu-svgrepo-com.png);
+                }
+            }
+            .menu{
+                .ul-header {
+                    align-items: center;
+                }
+            }
+        }
+}

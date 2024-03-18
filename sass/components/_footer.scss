@@ -1,0 +1,52 @@
+@use './../utilities/variables';
+@use './../utilities/extend';
+
+/* los estilos de footer */ 
+footer {
+    padding-top: 1.5rem;
+    margin-top: 3rem;
+    background-color: variables.$color-verde-components;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+        div {
+        margin: auto; /* Centra horizontalmente */
+        text-align: center;
+        }
+            .logo-footer{
+                img {
+                    width: 150px;
+                }
+        }
+        .paginas-footer{
+                ul{
+                    @extend .estilos-ul;
+                        li  {
+                            a {
+                                text-decoration: none;
+                                color: variables.$color-blanco;
+                                &:hover{
+                                    text-decoration: underline variables.$color-verde-amarillento;
+                                }
+                            }
+                        }
+                    }
+        }
+        .social-footer {
+            background-color: variables.$color-blanco;
+            margin: 2rem;
+            max-width: 400px;
+            padding-top: 1rem;
+            border-radius: 0px 30px 30px  30px;
+                ul {
+                    display: flex;
+                    margin-left: 0;
+                    flex-wrap: wrap;
+                    list-style: none;
+                    gap: .7rem;
+                    padding: 1.4rem;
+                }
+        }
+}
+
