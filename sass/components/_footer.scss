@@ -17,6 +17,16 @@ footer {
             .logo-footer{
                 img {
                     width: 150px;
+                    &:focus{
+                        transform: rotate(360deg);
+                        transition: transform 1s;
+                        cursor: pointer;
+                    }
+                    &:hover{
+                        transform: rotate(360deg);
+                        transition: transform 1s;
+                        cursor: pointer;
+                    }
                 }
         }
         .paginas-footer{

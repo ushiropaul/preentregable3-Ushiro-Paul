@@ -6,6 +6,8 @@
     <!-- icono de la página -->
     <link rel="shortcut icon" href="./img/icono-img.png" type="image/x-icon">
     <title>DinosaurWeb</title>
+    <!-- AOS library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- CSS -->
@@ -20,11 +22,11 @@
 </head>
 <body>
     <!-- header -->
-    <header class="">
+    <header>
         <nav class="navbar navbar-expand-lg background-header">
             <div class="container-fluid contenedor-de-los-items-del-nav">
             <a class="navbar-brand logo-header" href="./index.html">
-                <img src="./img/img-index/icono-img.png" alt="logo oficial de la pagina web de dinosaurweb"> 
+                <img src="./img/img-index/icono-img.png" alt="logo oficial de la pagina web de dinosaurweb" tabindex="0"> 
             </a>
             <button class="navbar-toggler menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon menu-icon"></span>
@@ -52,7 +54,7 @@
 
     <!-- main --------------------------------------------------------------------->
     <main class="container main-index">
-        <section class="presentacion-general-index container-fluid">
+        <section class="presentacion-general-index container-fluid" data-aos="flip-down" data-aos-duration="2000">
             <div class="row titulo-index">
                 <h1>
                     Dinosaurios
@@ -68,28 +70,28 @@
             </div>
         </section>
         <section class="epocas-index container-fluid">
-            <div class="card" style="width: 18rem;">
+            <div class="card carta-index" style="width: 18rem;" data-aos="flip-up" data-aos-duration="2000">
                 <img src="./img/img-index/eoraptor.jpg" class="card-img-top" alt="imagen de card del triasico">
-                <div class="card-body">
+                <div class="card-body cuerpo-carta">
                     <h5 class="card-title">Triásico</h5>
                     <p class="card-text">El triásico, la primera época del mezosoico.</p>
-                    <a href="./pages/triasico.html" class="btn btn-primary">Ver más</a>
+                    <a href="./pages/triasico.html" class="btn btn-primary boton-card-index">Ver más</a>
                 </div>
             </div>
-                <div class="card " style="width: 18rem;">
+                <div class="card carta-index" style="width: 18rem;" data-aos="flip-up" data-aos-duration="2000">
                     <img src="./img/img-index/jurasico.webp" class="card-img-top" alt="imagen de card del jurasico">
-                    <div class="card-body">
+                    <div class="card-body cuerpo-carta">
                         <h5 class="card-title">Jurasico</h5>
                         <p class="card-text">El jurasico, la época dorada de los dinosaurios.</p>
-                        <a href="./pages/jurasico.html" class="btn btn-primary">Ver más</a>
+                        <a href="./pages/jurasico.html" class="btn btn-primary boton-card-index">Ver más</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card carta-index" style="width: 18rem;" data-aos="flip-up" data-aos-duration="2000">
                     <img src="./img/img-index/espinosaurio.bmp" class="card-img-top" alt="imagen de card del cretacico.">
-                    <div class="card-body">
+                    <div class="card-body cuerpo-carta">
                         <h5 class="card-title">Cretácico</h5>
                         <p class="card-text">El cretácico, la era de los dinosaurios llega a su fin.</p>
-                        <a href="./pages/cretacico.html" class="btn btn-primary">Ver más</a>
+                        <a href="./pages/cretacico.html" class="btn btn-primary boton-card-index">Ver más</a>
                     </div>
                 </div>
         </section>
@@ -98,7 +100,7 @@
     <!-- footer ------------------------------------------------------------------->
     <footer>
         <div class="logo-footer">
-            <img src="./img/img-index/icono-img.png" alt="logo de la pagina web en el footer">
+            <img src="./img/img-index/icono-img.png" alt="logo de la pagina web en el footer" tabindex="0">
             <p>La mejor pagina de dinosaurios del universo.</p>
         </div>
         <div class="paginas-footer">
@@ -110,7 +112,7 @@
                 <li><a href="./pages/cretacico.html">Cretácico</a></li>
             </ul>
         </div>
-        <div class="social-footer ">
+        <div class="social-footer " data-aos="zoom-out" data-aos-duration="2000">
             <h5>Seguinos</h5>
             <ul>
                 <li>
@@ -138,6 +140,11 @@
     </footer>
 
 
+    <!-- AOS library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- BOOSTRAP script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 

@@ -21,8 +21,7 @@ h1 {
   font-size: 2.4rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0 10px rgb(0, 0, 0);
+  color: rgb(64, 105, 167);
 }
 
 h2 {
@@ -38,7 +37,7 @@ div h1 {
   justify-content: center;
 }
 
-.centrar-algo, .main-index .presentacion-general-index {
+.centrar-algo, body .main-index .presentacion-general-index {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,9 +55,8 @@ div h1 {
   margin-bottom: 1rem;
   position: relative;
   max-width: 600px;
-  max-height: 600px;
+  max-height: 550px;
   min-width: 300px;
-  min-height: 300px;
   background-color: #f2f2f2;
   border-radius: 10px;
   display: flex;
@@ -74,9 +72,7 @@ div h1 {
   box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
 .estilos-de-cards .card__image, main .grid-especies article .grid-container-cards .card .card__image {
-  width: 100%;
-  height: 100%;
-  max-height: 345px;
+  object-position: center;
   object-fit: cover;
 }
 .estilos-de-cards .card__content, main .grid-especies article .grid-container-cards .card .card__content {
@@ -121,8 +117,18 @@ div h1 {
   text-align: center;
 }
 .background-header .contenedor-de-los-items-del-nav .logo-header img {
-  width: 80px;
-  height: 70px;
+  width: 90px;
+  height: 75px;
+}
+.background-header .contenedor-de-los-items-del-nav .logo-header img:hover {
+  transform: rotate(360deg);
+  transition: transform 1s;
+  cursor: pointer;
+}
+.background-header .contenedor-de-los-items-del-nav .logo-header img:focus {
+  transform: rotate(360deg);
+  transition: transform 1s;
+  cursor: pointer;
 }
 .background-header .contenedor-de-los-items-del-nav .logo-header .titulo-header {
   color: rgb(199, 191, 29);
@@ -141,7 +147,7 @@ div h1 {
   align-items: center;
 }
 
-.centrar-algo, .main-index .presentacion-general-index {
+.centrar-algo, body .main-index .presentacion-general-index {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -159,9 +165,8 @@ div h1 {
   margin-bottom: 1rem;
   position: relative;
   max-width: 600px;
-  max-height: 600px;
+  max-height: 550px;
   min-width: 300px;
-  min-height: 300px;
   background-color: #f2f2f2;
   border-radius: 10px;
   display: flex;
@@ -179,9 +184,7 @@ div h1 {
 }
 
 .estilos-de-cards .card__image, main .grid-especies article .grid-container-cards .card .card__image {
-  width: 100%;
-  height: 100%;
-  max-height: 345px;
+  object-position: center;
   object-fit: cover;
 }
 
@@ -230,6 +233,16 @@ footer div {
 footer .logo-footer img {
   width: 150px;
 }
+footer .logo-footer img:focus {
+  transform: rotate(360deg);
+  transition: transform 1s;
+  cursor: pointer;
+}
+footer .logo-footer img:hover {
+  transform: rotate(360deg);
+  transition: transform 1s;
+  cursor: pointer;
+}
 footer .paginas-footer ul li a {
   text-decoration: none;
   color: rgb(244, 245, 245);
@@ -254,7 +267,7 @@ footer .social-footer ul {
 }
 
 /* estilos de main */
-.main-index {
+body .main-index {
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-image: url(./../img/img-index/fondo.main.bmp);
@@ -263,20 +276,26 @@ footer .social-footer ul {
   border-radius: 0 0 30px 30px;
   box-shadow: 0 0 7px #8d8d8d;
 }
-.main-index .presentacion-general-index {
+body .main-index .presentacion-general-index {
   margin-bottom: 2rem;
 }
-.main-index .presentacion-general-index .titulo-index {
+body .main-index .presentacion-general-index .titulo-index {
   display: flex;
   justify-content: center;
 }
-.main-index .presentacion-general-index .descripcion-index {
-  background-color: rgba(255, 255, 255, 0.342); /* Color blanco con 70% de opacidad */
+body .main-index .presentacion-general-index .titulo-index h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(244, 245, 245);
+}
+body .main-index .presentacion-general-index .descripcion-index {
+  background-color: rgba(255, 255, 255, 0.342);
   backdrop-filter: blur(6px);
   padding: 1rem;
   border-radius: 1rem;
 }
-.main-index .epocas-index {
+body .main-index .epocas-index {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -285,6 +304,22 @@ footer .social-footer ul {
   gap: 1.5rem;
   margin-bottom: 2rem;
 }
+body .main-index .epocas-index .carta-index {
+  border-radius: 2rem;
+}
+body .main-index .epocas-index .cuerpo-carta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+body .main-index .epocas-index .cuerpo-carta .boton-card-index {
+  background-color: rgb(7, 87, 56);
+  border: none;
+}
+body .main-index .epocas-index .cuerpo-carta .boton-card-index:hover {
+  background-color: rgb(136, 131, 46);
+}
 
 /* ESTILOS MOBILE-FIRST --------------------------------------------------------------------------------------------------------------------------------------------------*/
 main {
@@ -292,19 +327,15 @@ main {
   padding-bottom: 2rem;
   /* SECTION GRID-ESPECIES */
 }
-main .ambiente {
-  /* carrusel */
-}
-main .ambiente .carrusel-ambiente {
-  display: flex;
-  width: 100%;
-}
-main .ambiente .carrusel-ambiente .carrusel-item {
-  object-fit: cover;
+main .carrusel {
+  max-height: 400px;
   overflow: hidden;
-  max-height: 320px;
 }
-main .ambiente .informacion-ambiente {
+main .carrusel img {
+  object-fit: cover;
+  height: 400px;
+}
+main .informacion-ambiente {
   margin-right: 6rem;
 }
 main .grid-especies {
@@ -324,12 +355,18 @@ main .grid-especies article .contenedor-de-descripcion .descripcion {
 }
 main .grid-especies article .grid-container-cards {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 400px);
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-rows: repeat(2, 350px);
   grid-gap: 0.5rem;
 }
 main .grid-especies article .grid-container-cards .card:hover .card__content {
   transform: rotateX(0deg);
+}
+main .grid-especies article .grid-container-cards .card .card__image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: center;
 }
 main .grid-especies .carnivoros {
   background-color: rgb(136, 131, 46);
@@ -347,6 +384,40 @@ main .grid-especies .flora {
   padding: 0.5rem;
 }
 
+/* ESTILOS TABLET DE PAGES--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+  .ambiente .carrusel {
+    max-height: 600px;
+    overflow: hidden;
+  }
+  .ambiente .carrusel img {
+    object-fit: cover;
+    height: 600px;
+  }
+  .grid-especies .grid-container-cards .card {
+    margin-bottom: 0.3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-especies .grid-container-cards .card .card__image {
+    max-width: 100%;
+    height: auto;
+  }
+  .grid-especies .grid-container-cards .card .card__content {
+    flex: 1;
+  }
+}
+/* ESTILOS DESKTOP DE PAGES-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1000px) {
+  .ambiente .carrusel {
+    max-height: 800px;
+    overflow: hidden;
+  }
+  .ambiente .carrusel img {
+    object-fit: cover;
+    height: 800px;
+  }
+}
 @media screen and (max-width: 974px) {
   .menu {
     position: absolute;
@@ -379,58 +450,6 @@ main .grid-especies .flora {
   }
   footer .footer-copyright {
     grid-area: div4;
-  }
-}
-/* ESTILOS TABLET DE PAGES--------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media screen and (min-width: 768px) {
-  .carrusel-ambiente {
-    display: flex;
-    width: 100%;
-    max-height: 750px;
-  }
-  .carrusel-ambiente .carrusel-item {
-    object-fit: cover;
-    overflow: hidden;
-    max-height: 750px;
-  }
-  .grid-especies .grid-container-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 600px);
-    gap: 0.5rem;
-  }
-  .grid-especies .grid-container-cards .card {
-    margin-bottom: 0.3rem;
-    display: flex;
-    flex-direction: column;
-  }
-  .grid-especies .grid-container-cards .card .card__image {
-    max-width: 100%;
-    height: auto;
-  }
-  .grid-especies .grid-container-cards .card .card__content {
-    flex: 1;
-  }
-}
-/* ESTILOS DESKTOP DE PAGES-------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media screen and (min-width: 1024px) {
-  .carrusel {
-    margin-left: 3rem;
-    margin-right: 3rem;
-    max-height: 750px;
-  }
-  .carrusel .carrusel-ambiente {
-    display: flex;
-    width: 100%;
-  }
-  .carrusel .carrusel-ambiente .carrusel-item {
-    object-fit: cover;
-    overflow: hidden;
-    max-height: 700px;
-    border-radius: 2rem;
-  }
-  .grid-especies .grid-container-cards {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 

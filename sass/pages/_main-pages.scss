@@ -1,23 +1,19 @@
 /* ESTILOS MOBILE-FIRST --------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 main {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    .ambiente{
-
-            /* carrusel */
-            .carrusel-ambiente {
-                display: flex;
-                width: 100%;
-                .carrusel-item {
-                    object-fit: cover;
-                    overflow: hidden;
-                    max-height: 320px;
-                }
-            }
+            .carrusel {
+                max-height: 400px;
+                overflow: hidden;
+                        img{
+                            object-fit: cover;
+                            height: 400px;
+                        }
+                    }
             .informacion-ambiente{
                 margin-right: 6rem;
             }
-        }
 
     /* SECTION GRID-ESPECIES */
     .grid-especies {
@@ -32,13 +28,19 @@ main {
             }
             border-radius: 1rem;
             .grid-container-cards {
-                @include grid-container(1fr, repeat(2, 400px), .5rem);
-
-                    .card:hover .card__content {
-                        transform: rotateX(0deg);
-                        }
+                // contiene una propiedad de grid columns parecida a wrap: wrap; (ajusta automaticamente las columnas)
+                @include grid-container(repeat(auto-fit, minmax(500px, 1fr)), repeat(2, 350px), .5rem);
                     .card{
                         @extend .estilos-de-cards;
+                        &:hover .card__content{
+                            transform: rotateX(0deg);
+                        }   
+                            .card__image{
+                                object-fit: cover;
+                                width: 100%;
+                                height: 100%;
+                                object-position: center;
+                            }
                     }
             }
         }
@@ -62,4 +64,3 @@ main {
         }
     }
 } 
-

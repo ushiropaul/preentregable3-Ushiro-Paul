@@ -1,6 +1,58 @@
-// header estilos
+
 
 @use './../utilities/variables';
+
+
+/* ESTILOS TABLET DE PAGES--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width:768px) {
+	.ambiente{
+        .carrusel {
+            max-height: 600px;
+            overflow: hidden;
+                    img{
+                        object-fit: cover;
+                        height: 600px;
+                    }
+                }
+    }
+	.grid-especies {
+			.grid-container-cards {
+                .card {
+                    margin-bottom: .3rem;
+                    display: flex;
+                    flex-direction: column;
+                    .card__image {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                    .card__content {
+                        flex: 1;
+                    }
+                }
+			}
+	}
+}
+
+/* ESTILOS DESKTOP DE PAGES-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:1000px) {
+	.ambiente{
+        .carrusel {
+            max-height: 800px;
+            overflow: hidden;
+                    img{
+                        object-fit: cover;
+                        height: 800px;
+                    }
+                }
+    }
+}
+
+
+
+
+
+
 
 
 @media screen and (max-width:974px){
@@ -42,62 +94,3 @@
 	}
 }
 
-
-/* ESTILOS TABLET DE PAGES--------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-@media screen and (min-width:768px) {
-	.carrusel-ambiente {
-		display: flex;
-		width: 100%;
-        max-height: 750px;
-        .carrusel-item {
-            object-fit: cover;
-            overflow: hidden;
-            max-height: 750px;
-        }
-	}
-	.grid-especies {
-			.grid-container-cards {
-				display: grid;
-				grid-template-columns: repeat(2, 1fr);
-				grid-template-rows: repeat(2, 600px);
-				gap: .5rem;
-                .card {
-                    margin-bottom: .3rem;
-                    display: flex;
-                    flex-direction: column;
-                    .card__image {
-                        max-width: 100%;
-                        height: auto;
-                    }
-                    .card__content {
-                        flex: 1;
-                    }
-                }
-			}
-	}
-}
-
-/* ESTILOS DESKTOP DE PAGES-------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media screen and (min-width:1024px) {
-	.carrusel {
-		margin-left: 3rem;
-		margin-right: 3rem;
-        max-height: 750px;
-        .carrusel-ambiente {
-            display: flex;
-            width: 100%;
-            .carrusel-item {
-                object-fit: cover;
-                overflow: hidden;
-                max-height: 700px;
-                border-radius: 2rem;
-            }
-        }
-	}
-	.grid-especies {
-			.grid-container-cards {
-				grid-template-columns: repeat(3, 1fr);
-			}
-	}
-}
