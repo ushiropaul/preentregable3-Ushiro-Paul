@@ -66,23 +66,23 @@
                         Sube una foto e información de tu dinosaurio favorito y clasificalo. Nosotros nos encargamos de que luzca genial en la página
                     </p>
                 </div>
-                <div class="form-container">
+                <div class="form-container" data-aos="zoom-in" data-aos-duration="1000">
                     <form action="">
                         <div>
                             <Label>Tu usuario:</Label>
-                        <input type="text" placeholder="Nombre de usuario">
+                        <input type="text" placeholder="Nombre de usuario" requiered>
                         </div>
                         <div>
                             <label>Tu email</label>
-                        <input type="email" name="email" id="email" placeholder="Correo electrónico">
+                        <input type="email" name="email" id="email" placeholder="Correo electrónico" requiered>
                         </div>
                         <div>
                             <label>Nombre de la especie:</label>
-                        <input type="text" name="nombre-especie" id="nombre-especie-input-form" placeholder="Nombre de la especie">
+                        <input type="text" name="nombre-especie" id="nombre-especie-input-form" placeholder="Nombre de la especie" requiered>
                         </div>
                         <div>
                         <label>Selecciona una categoría:</label>
-                            <select name="select" id="select">
+                            <select name="select" id="select" requiered>
                                 <option value="categoria-epoca">Cretácico</option>
                                 <option value="categoria-epoca">Jurásico</option>
                                 <option value="categoria-epoca">Triásico</option>
@@ -90,7 +90,7 @@
                         </div>
                         <div>
                             <label>Selecciona una categoria:</label>
-                        <select name="select" id="select">
+                        <select name="select" id="select" requiered>
                             <option value="categoria-dieta">Carnivoro</option>
                             <option value="categoria-dieta">Hervíboro</option>
                             <option value="categoria-dieta">Omnívoro</option>
@@ -98,13 +98,13 @@
                         </div>
                         <div class="div-text-area">
                             <label for="textarea">Danos informacion de la especie</label>
-                        <textarea name="informacion" id="info-text-form" cols="30" rows="3">
+                        <textarea name="informacion" id="info-text-form" cols="30" rows="3"  requiered>
 
                         </textarea>
                         </div>
                         <div>
                             <label for="">Sube la foto</label>
-                            <input type="url" name="" id="" placeholder="Tu URL aqui"> 
+                            <input type="url" name="" id="" placeholder="Tu URL aqui"  requiered> 
                         </div>
                         <div class="div-enviar-form">
                             <input type="submit" value="enviar" >

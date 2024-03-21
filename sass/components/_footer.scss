@@ -1,5 +1,6 @@
 @use './../utilities/variables';
 @use './../utilities/extend';
+@use './../utilities/animaciones';
 
 /* los estilos de footer */ 
 footer {
@@ -14,9 +15,9 @@ footer {
         margin: auto; /* Centra horizontalmente */
         text-align: center;
         }
-            .logo-footer{
+            .logo-footer{ 
                 img {
-                    animation-name: footer-logo;
+                    animation-name: footerlogo;
                     animation-iteration-count: infinite;
                     animation-timing-function: linear;
                     animation-direction: alternate;
