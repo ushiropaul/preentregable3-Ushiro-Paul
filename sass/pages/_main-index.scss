@@ -34,6 +34,12 @@ body
         margin-bottom: 2rem;
         .carta-index{
             border-radius: 2rem;
+            // animacion de sube y baja de las cartas
+            animation-name: carta-index;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+            animation-direction: alternate;
         }
         .cuerpo-carta{
             display: flex;

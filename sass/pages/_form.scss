@@ -1,0 +1,86 @@
+@use './../utilities/variables';
+
+
+
+.main-form{
+    background-image: url(./../img/img-form/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    margin-bottom: 0;
+    .contenedor-total-form{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        .formulario-presentacion{
+            background-color: #a39b9b5b;
+            backdrop-filter:  blur(4px);
+            @include flex-container(column, center, center, wrap);
+            padding: 0 3rem 0 3rem;
+            p{
+                color: $color-blanco;
+                text-align: center;
+            }
+
+        }
+        .form-container{
+            display: flex;
+            justify-content: center;
+            background-color: transparent;
+            form{
+                @include flex-container(column, center, center, nowrap); 
+                max-width: 400px;
+                padding: 1rem;
+                background: linear-gradient(to right, #00000086, #4343435b);
+                backdrop-filter: blur(6px);
+                border-radius: 1rem;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    input, select{
+                        border-radius: .6rem;
+                        padding: .3rem;
+                        background-color: transparent;
+                        color: $color-blanco;
+                        border:1px solid $color-blanco;
+                    }
+                    select{
+                        background-color: transparent;
+                        border:1px solid $color-blanco;
+                        option {
+                            color: $color-negro;
+                        }
+                    }
+                    label{
+                        color: $color-blanco;
+                        text-align: center;
+                    }
+                }
+                
+                .div-text-area{
+                    text-align: center;
+                    textarea{
+                        margin-top: .5rem;
+                        border-radius: 1rem;
+                        background-color: transparent;
+                        padding: .3rem;
+                        color: $color-blanco;
+                        border:1px solid $color-blanco;
+        
+                    }
+                }
+                .div-enviar-form{
+                    margin-top: .7rem;
+                }
+                
+            }
+        }    
+    }
+}
+
+// footer margin
+.footer-form{
+    margin-top: 0;
+}
+

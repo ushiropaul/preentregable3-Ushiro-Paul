@@ -16,17 +16,11 @@ footer {
         }
             .logo-footer{
                 img {
+                    animation-name: footer-logo;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                    animation-direction: alternate;
                     width: 150px;
-                    &:focus{
-                        transform: rotate(360deg);
-                        transition: transform 1s;
-                        cursor: pointer;
-                    }
-                    &:hover{
-                        transform: rotate(360deg);
-                        transition: transform 1s;
-                        cursor: pointer;
-                    }
                 }
         }
         .paginas-footer{

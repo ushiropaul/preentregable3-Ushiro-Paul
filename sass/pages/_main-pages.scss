@@ -29,7 +29,7 @@ main {
             border-radius: 1rem;
             .grid-container-cards {
                 // contiene una propiedad de grid columns parecida a wrap: wrap; (ajusta automaticamente las columnas)
-                @include grid-container(repeat(auto-fit, minmax(500px, 1fr)), repeat(2, 350px), .5rem);
+                @include grid-container(repeat(auto-fit, minmax(400px, 1fr)), repeat(2, 350px), .5rem);
                     .card{
                         @extend .estilos-de-cards;
                         &:hover .card__content{

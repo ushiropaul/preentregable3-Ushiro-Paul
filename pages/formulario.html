@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DinoFormulario</title>
     <!-- icono de la página -->
-    <link rel="shortcut icon" href="./img/img-index/icono-img.png" type="image/x-icon">
-    <title>DinosaurWeb</title>
+    <link rel="shortcut icon" href="./../img/img-index/icono-img.png" type="image/x-icon">
     <!-- AOS library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./../css/main.css">
     <!-- ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- FONTS -->
@@ -22,32 +22,32 @@
 </head>
 <body>
     <!-- header -->
-    <header>
+    <header class="">
         <nav class="navbar navbar-expand-lg background-header">
             <div class="container-fluid contenedor-de-los-items-del-nav">
-            <a class="navbar-brand logo-header" href="./index.html">
-                <img src="./img/img-index/icono-img.png" alt="logo oficial de la pagina web de dinosaurweb" tabindex="0"> 
-            </a>
+                <a class="navbar-brand logo-header" href="./index.html">
+                    <img src="./../img/img-index/icono-img.png" alt="logo oficial de la pagina web de dinosaurweb"> 
+                </a>
             <button class="navbar-toggler menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon menu-icon"></span>
             </button>
             <div class="collapse navbar-collapse menu" id="navbarNavDropdown">
                 <ul class="navbar-nav ul-header">
                 <li class="nav-item nav-item-inicio">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    <a class="nav-link" aria-current="page" href="./../index.html">Inicio</a>
                 </li>
                 <!-- links item epocas geologicas -->
                 <li class="nav-item nav-item-triasico">
-                    <a class="nav-link" href="./pages/triasico.html">Triásico</a>
+                    <a class="nav-link active" href="./triasico.html">Triásico</a>
                 </li>
                 <li class="nav-item nav-item-jurasico">
-                    <a class="nav-link" href="./pages/jurasico.html">Jurásico</a>
+                    <a class="nav-link" href="./jurasico.html">Jurásico</a>
                 </li>
                 <li class="nav-item nav-item-cretaico">
-                    <a class="nav-link" href="./pages/cretacico.html">Cretácico</a>
+                    <a class="nav-link" href="./cretacico.html">Cretácico</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./pages/formulario.html">Formulario</a>
+                    <a href="./formulario.html">Formulario</a>
                 </li>
                 </ul>
             </div>
@@ -55,68 +55,83 @@
         </nav>
     </header>
 
-    <!-- main --------------------------------------------------------------------->
-    <main class="container main-index">
-        <section class="presentacion-general-index container-fluid" data-aos="flip-down" data-aos-duration="2000">
-            <div class="row titulo-index">
-                <h1>
-                    Dinosaurios
-                </h1>
-            </div>
-            <div class="row descripcion-index">
-                <p class="col-sm-12 col-lg-6">
-                    Hace millones de años, en un mundo muy diferente al nuestro, reinaban criaturas asombrosas y colosales conocidas como dinosaurios. Desde los temibles depredadores hasta los pacíficos herbívoros, estos seres dominaron la Tierra durante más de 160 millones de años. Su historia fascinante nos transporta a un pasado remoto lleno de misterio y maravilla, donde la vida se desarrollaba en una escala impresionante y desafiante.
-                </p>
-                <p class="col-sm-12 col-lg-6">
-                    A través del estudio de sus fósiles, continuamos desentrañando los secretos de estos antiguos gobernantes del mundo natural, y su legado perdura en la forma de las aves modernas, recordándonos la asombrosa diversidad y evolución de la vida en nuestro planeta. ¡En esta página podrás descubrir cómo eran realmente estos increíbles animales y explorar su fascinante mundo prehistórico!
-                </p>
-            </div>
-        </section>
-        <section class="epocas-index container-fluid">
-            <div class="card carta-index" style="width: 18rem;" data-aos="flip-up" data-aos-duration="2000">
-                <img src="./img/img-index/eoraptor.jpg" class="card-img-top" alt="imagen de card del triasico">
-                <div class="card-body cuerpo-carta">
-                    <h5 class="card-title">Triásico</h5>
-                    <p class="card-text">El triásico, la primera época del mezosoico.</p>
-                    <a href="./pages/triasico.html" class="btn btn-primary boton-card-index">Ver más</a>
+
+    <main class="main-form">
+        <section class="contenedor-total-form">
+                <div class="formulario-presentacion">
+                    <h1>
+                        ¡ENVIA TU DINOFOTO!
+                    </h1>
+                    <p>
+                        Sube una foto e información de tu dinosaurio favorito y clasificalo. Nosotros nos encargamos de que luzca genial en la página
+                    </p>
                 </div>
-            </div>
-                <div class="card carta-index" style="width: 18rem;" data-aos="flip-up" data-aos-duration="2000">
-                    <img src="./img/img-index/jurasico.webp" class="card-img-top" alt="imagen de card del jurasico">
-                    <div class="card-body cuerpo-carta">
-                        <h5 class="card-title">Jurasico</h5>
-                        <p class="card-text">El jurasico, la época dorada de los dinosaurios.</p>
-                        <a href="./pages/jurasico.html" class="btn btn-primary boton-card-index">Ver más</a>
-                    </div>
-                </div>
-                <div class="card carta-index" style="width: 18rem;" data-aos="flip-up" data-aos-duration="2000">
-                    <img src="./img/img-index/espinosaurio.bmp" class="card-img-top" alt="imagen de card del cretacico.">
-                    <div class="card-body cuerpo-carta">
-                        <h5 class="card-title">Cretácico</h5>
-                        <p class="card-text">El cretácico, la era de los dinosaurios llega a su fin.</p>
-                        <a href="./pages/cretacico.html" class="btn btn-primary boton-card-index">Ver más</a>
-                    </div>
+                <div class="form-container">
+                    <form action="">
+                        <div>
+                            <Label>Tu usuario:</Label>
+                        <input type="text" placeholder="Nombre de usuario">
+                        </div>
+                        <div>
+                            <label>Tu email</label>
+                        <input type="email" name="email" id="email" placeholder="Correo electrónico">
+                        </div>
+                        <div>
+                            <label>Nombre de la especie:</label>
+                        <input type="text" name="nombre-especie" id="nombre-especie-input-form" placeholder="Nombre de la especie">
+                        </div>
+                        <div>
+                        <label>Selecciona una categoría:</label>
+                            <select name="select" id="select">
+                                <option value="categoria-epoca">Cretácico</option>
+                                <option value="categoria-epoca">Jurásico</option>
+                                <option value="categoria-epoca">Triásico</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Selecciona una categoria:</label>
+                        <select name="select" id="select">
+                            <option value="categoria-dieta">Carnivoro</option>
+                            <option value="categoria-dieta">Hervíboro</option>
+                            <option value="categoria-dieta">Omnívoro</option>
+                        </select>
+                        </div>
+                        <div class="div-text-area">
+                            <label for="textarea">Danos informacion de la especie</label>
+                        <textarea name="informacion" id="info-text-form" cols="30" rows="3">
+
+                        </textarea>
+                        </div>
+                        <div>
+                            <label for="">Sube la foto</label>
+                            <input type="url" name="" id="" placeholder="Tu URL aqui"> 
+                        </div>
+                        <div class="div-enviar-form">
+                            <input type="submit" value="enviar" >
+                        </div>
+                    </form>
                 </div>
         </section>
     </main>
 
+
     <!-- footer ------------------------------------------------------------------->
-    <footer>
-        <div class="logo-footer">
-            <img src="./img/img-index/icono-img.png" alt="logo de la pagina web en el footer" tabindex="0">
+    <footer class="footer-form">
+        <div class="logo-footer col-sm- col-md- col-lg-">
+            <img src="./../img/img-index/icono-img.png" alt="logo de la pagina web en el footer">
             <p>La mejor pagina de dinosaurios del universo.</p>
         </div>
-        <div class="paginas-footer">
+        <div class="paginas-footer col-sm- col-md- col-lg-">
             <p>Mirá nuestras secciones:</p>
             <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/triasico.html">Triásico</a></li>
-                <li><a href="./pages/jurasico.html">Jurásico</a></li>
-                <li><a href="./pages/cretacico.html">Cretácico</a></li>
-                <li><a href="./pages/formulario.html">Formulario</a></li>
+                <li><a href="./../index.html">Inicio</a></li>
+                <li><a href="./triasico.html">Triásico</a></li>
+                <li><a href="./jurasico.html">Jurásico</a></li>
+                <li><a href="./cretacico.html">Cretácico</a></li>
+                <li><a href="./formulario.html">Formulario</a></li>
             </ul>
         </div>
-        <div class="social-footer " data-aos="zoom-out" data-aos-duration="2000">
+        <div class="social-footer " data-aos="zoom-out" data-aos-duration="1500">
             <h5>Seguinos</h5>
             <ul>
                 <li>
@@ -143,7 +158,6 @@
         </div>
     </footer>
 
-
     <!-- AOS library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -151,7 +165,7 @@
     </script>
     <!-- BOOSTRAP script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+    
+    
 </body>
 </html>
-<!-- profe sos lo más <3 -->

@@ -1,0 +1,28 @@
+
+
+
+
+// animacion para las card del index
+
+@keyframes carta-index {
+    
+    0%{
+        transform: translateY(-0px);
+    }
+    100%{
+        transform: translateY(-30px);
+    }
+
+}
+
+
+// animacion para el logo del footer
+
+@keyframes footer-logo {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
