@@ -4,9 +4,7 @@
 
 .main-form{
     background-image: url(./../img/img-form/fondo.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .background-ajustes;
     padding-top: 0;
     margin-bottom: 0;
     .contenedor-total-form{
